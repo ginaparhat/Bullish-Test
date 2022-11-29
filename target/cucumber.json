@@ -1,0 +1,730 @@
+[
+  {
+    "line": 2,
+    "elements": [
+      {
+        "start_timestamp": "2022-11-29T17:18:24.198Z",
+        "before": [
+          {
+            "result": {
+              "duration": 1887157200,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.automation.stepdef.Hooks.setUpUI()"
+            }
+          }
+        ],
+        "line": 4,
+        "name": "Verify user can login with valid credentials",
+        "description": "",
+        "id": "login-feature;verify-user-can-login-with-valid-credentials",
+        "after": [
+          {
+            "result": {
+              "duration": 379437100,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.automation.stepdef.Hooks.cleanUp()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 25152515000,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "user open website",
+            "match": {
+              "location": "com.automation.stepdef.LoginSteps.user_open_website()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 155818900,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "verify user is on login page",
+            "match": {
+              "location": "com.automation.stepdef.LoginSteps.verify_user_is_on_login_page()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 1538955700,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "user login with username \"tomsmith\" and password \"SuperSecretPassword!\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"tomsmith\"",
+                  "offset": 25
+                },
+                {
+                  "val": "\"SuperSecretPassword!\"",
+                  "offset": 49
+                }
+              ],
+              "location": "com.automation.stepdef.LoginSteps.login_with_username_and_password(java.lang.String,java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 39592000,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "verify login is successful",
+            "match": {
+              "location": "com.automation.stepdef.LoginSteps.verifyLoginSuccessful()"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@ui"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2022-11-29T17:18:53.435Z",
+        "before": [
+          {
+            "result": {
+              "duration": 3643796100,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.automation.stepdef.Hooks.setUpUI()"
+            }
+          }
+        ],
+        "line": 18,
+        "name": "Verify user cannot login with invalid credentials",
+        "description": "",
+        "id": "login-feature;verify-user-cannot-login-with-invalid-credentials;;2",
+        "after": [
+          {
+            "result": {
+              "duration": 225297300,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.automation.stepdef.Hooks.cleanUp()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 28941908400,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "user open website",
+            "match": {
+              "location": "com.automation.stepdef.LoginSteps.user_open_website()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 135186100,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "verify user is on login page",
+            "match": {
+              "location": "com.automation.stepdef.LoginSteps.verify_user_is_on_login_page()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 5612381000,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "user login with username \"tomsmith\" and password \"supersecretpassword!\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"tomsmith\"",
+                  "offset": 25
+                },
+                {
+                  "val": "\"supersecretpassword!\"",
+                  "offset": 49
+                }
+              ],
+              "location": "com.automation.stepdef.LoginSteps.login_with_username_and_password(java.lang.String,java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 55061600,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "verify invalid login error messsge \"Your password is invalid!\" is displayed",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Your password is invalid!\"",
+                  "offset": 35
+                }
+              ],
+              "location": "com.automation.stepdef.LoginSteps.verify_invalid_login_error_messsge_is_displayed(java.lang.String)"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@ui"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2022-11-29T17:19:32.058Z",
+        "before": [
+          {
+            "result": {
+              "duration": 1085545500,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.automation.stepdef.Hooks.setUpUI()"
+            }
+          }
+        ],
+        "line": 19,
+        "name": "Verify user cannot login with invalid credentials",
+        "description": "",
+        "id": "login-feature;verify-user-cannot-login-with-invalid-credentials;;3",
+        "after": [
+          {
+            "result": {
+              "duration": 167573200,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.automation.stepdef.Hooks.cleanUp()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 17180085300,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "user open website",
+            "match": {
+              "location": "com.automation.stepdef.LoginSteps.user_open_website()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 104526800,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "verify user is on login page",
+            "match": {
+              "location": "com.automation.stepdef.LoginSteps.verify_user_is_on_login_page()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 840098100,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "user login with username \"tomsmith\" and password \"\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"tomsmith\"",
+                  "offset": 25
+                },
+                {
+                  "val": "\"\"",
+                  "offset": 49
+                }
+              ],
+              "location": "com.automation.stepdef.LoginSteps.login_with_username_and_password(java.lang.String,java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 49404700,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "verify invalid login error messsge \"Your password is invalid!\" is displayed",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Your password is invalid!\"",
+                  "offset": 35
+                }
+              ],
+              "location": "com.automation.stepdef.LoginSteps.verify_invalid_login_error_messsge_is_displayed(java.lang.String)"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@ui"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2022-11-29T17:19:51.494Z",
+        "before": [
+          {
+            "result": {
+              "duration": 993551800,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.automation.stepdef.Hooks.setUpUI()"
+            }
+          }
+        ],
+        "line": 20,
+        "name": "Verify user cannot login with invalid credentials",
+        "description": "",
+        "id": "login-feature;verify-user-cannot-login-with-invalid-credentials;;4",
+        "after": [
+          {
+            "result": {
+              "duration": 192645000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.automation.stepdef.Hooks.cleanUp()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 12845360600,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "user open website",
+            "match": {
+              "location": "com.automation.stepdef.LoginSteps.user_open_website()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 197890300,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "verify user is on login page",
+            "match": {
+              "location": "com.automation.stepdef.LoginSteps.verify_user_is_on_login_page()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 1818655100,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "user login with username \"tomsmith\" and password \"SuperSecretPassword\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"tomsmith\"",
+                  "offset": 25
+                },
+                {
+                  "val": "\"SuperSecretPassword\"",
+                  "offset": 49
+                }
+              ],
+              "location": "com.automation.stepdef.LoginSteps.login_with_username_and_password(java.lang.String,java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 48813200,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "verify invalid login error messsge \"Your password is invalid!\" is displayed",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Your password is invalid!\"",
+                  "offset": 35
+                }
+              ],
+              "location": "com.automation.stepdef.LoginSteps.verify_invalid_login_error_messsge_is_displayed(java.lang.String)"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@ui"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2022-11-29T17:20:07.596Z",
+        "before": [
+          {
+            "result": {
+              "duration": 969050600,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.automation.stepdef.Hooks.setUpUI()"
+            }
+          }
+        ],
+        "line": 21,
+        "name": "Verify user cannot login with invalid credentials",
+        "description": "",
+        "id": "login-feature;verify-user-cannot-login-with-invalid-credentials;;5",
+        "after": [
+          {
+            "result": {
+              "duration": 209576000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.automation.stepdef.Hooks.cleanUp()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 11757792100,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "user open website",
+            "match": {
+              "location": "com.automation.stepdef.LoginSteps.user_open_website()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 141737000,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "verify user is on login page",
+            "match": {
+              "location": "com.automation.stepdef.LoginSteps.verify_user_is_on_login_page()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 922118000,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "user login with username \"\" and password \"SuperSecretPassword!\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"\"",
+                  "offset": 25
+                },
+                {
+                  "val": "\"SuperSecretPassword!\"",
+                  "offset": 41
+                }
+              ],
+              "location": "com.automation.stepdef.LoginSteps.login_with_username_and_password(java.lang.String,java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 48130600,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "verify invalid login error messsge \"Your username is invalid!\" is displayed",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Your username is invalid!\"",
+                  "offset": 35
+                }
+              ],
+              "location": "com.automation.stepdef.LoginSteps.verify_invalid_login_error_messsge_is_displayed(java.lang.String)"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@ui"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2022-11-29T17:20:21.649Z",
+        "before": [
+          {
+            "result": {
+              "duration": 907915200,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.automation.stepdef.Hooks.setUpUI()"
+            }
+          }
+        ],
+        "line": 22,
+        "name": "Verify user cannot login with invalid credentials",
+        "description": "",
+        "id": "login-feature;verify-user-cannot-login-with-invalid-credentials;;6",
+        "after": [
+          {
+            "result": {
+              "duration": 199281000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.automation.stepdef.Hooks.cleanUp()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 14822198500,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "user open website",
+            "match": {
+              "location": "com.automation.stepdef.LoginSteps.user_open_website()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 123042600,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "verify user is on login page",
+            "match": {
+              "location": "com.automation.stepdef.LoginSteps.verify_user_is_on_login_page()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 1064270800,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "user login with username \"toms\" and password \"SuperSecretPassword!\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"toms\"",
+                  "offset": 25
+                },
+                {
+                  "val": "\"SuperSecretPassword!\"",
+                  "offset": 45
+                }
+              ],
+              "location": "com.automation.stepdef.LoginSteps.login_with_username_and_password(java.lang.String,java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 67377000,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "verify invalid login error messsge \"Your username is invalid!\" is displayed",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Your username is invalid!\"",
+                  "offset": 35
+                }
+              ],
+              "location": "com.automation.stepdef.LoginSteps.verify_invalid_login_error_messsge_is_displayed(java.lang.String)"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@ui"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2022-11-29T17:20:38.841Z",
+        "before": [
+          {
+            "result": {
+              "duration": 934360800,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.automation.stepdef.Hooks.setUpUI()"
+            }
+          }
+        ],
+        "line": 23,
+        "name": "Verify user cannot login with invalid credentials",
+        "description": "",
+        "id": "login-feature;verify-user-cannot-login-with-invalid-credentials;;7",
+        "after": [
+          {
+            "result": {
+              "duration": 194108100,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.automation.stepdef.Hooks.cleanUp()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 42232042700,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "user open website",
+            "match": {
+              "location": "com.automation.stepdef.LoginSteps.user_open_website()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 120528600,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "verify user is on login page",
+            "match": {
+              "location": "com.automation.stepdef.LoginSteps.verify_user_is_on_login_page()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 1164852400,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "user login with username \"\" and password \"\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"\"",
+                  "offset": 25
+                },
+                {
+                  "val": "\"\"",
+                  "offset": 41
+                }
+              ],
+              "location": "com.automation.stepdef.LoginSteps.login_with_username_and_password(java.lang.String,java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 49547200,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "verify invalid login error messsge \"Your username is invalid!\" is displayed",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Your username is invalid!\"",
+                  "offset": 35
+                }
+              ],
+              "location": "com.automation.stepdef.LoginSteps.verify_invalid_login_error_messsge_is_displayed(java.lang.String)"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@ui"
+          }
+        ]
+      }
+    ],
+    "name": "Login Feature",
+    "description": "",
+    "id": "login-feature",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/features/UI.feature",
+    "tags": [
+      {
+        "name": "@ui",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 1
+        }
+      }
+    ]
+  }
+]
